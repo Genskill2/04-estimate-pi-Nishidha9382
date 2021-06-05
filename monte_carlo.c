@@ -4,6 +4,12 @@
 #include <math.h>
 
 float mc_pi(int n);
+float frandom() {
+  long int q = random();
+  float ret = (float)q/(float)RAND_MAX;
+  return ret;
+}
+
 float mc_pi(int n){
   int i=0;
   int circle_ct=0;
@@ -23,11 +29,6 @@ float mc_pi(int n){
   return(pi);
 }
 
-float frandom() {
-  long int q = random();
-  float ret = (float)q/(float)RAND_MAX;
-  return ret;
-}
 
 int main(void) {
   float pi0;
