@@ -33,7 +33,6 @@ float mc_pi(int n){
 int main(void) {
   float pi0;
   float pi1;
-  mc_pi(n);
   
   pi0 = mc_pi(25000);
   pi1 = mc_pi(25000);
